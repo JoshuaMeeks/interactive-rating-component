@@ -4,11 +4,9 @@ const selectionContainer = document.querySelector('.selection-container');
 const selectionCircles = document.querySelectorAll('.selection-circle');
 const submitButton = document.querySelector('button');
 
-console.log(selectionCircles)
-
 selectionCircles.forEach((circle) => {
-  circle.addEventListener('mouseover', () => {
-    circle.style.backgroundColor = 'hsl(217, 12%, 63%)'
+  circle.addEventListener('click', (e) => {
+    e.target.style.background = 'hsl(25, 97%, 53%)'
   })
 })
 

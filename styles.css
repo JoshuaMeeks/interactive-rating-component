@@ -58,6 +58,11 @@ p{
   margin-bottom: 1.2em;
 }
 
+.selection-circle:hover {
+  color: hsl((0, 0%, 100%));
+  background-color: hsl(217, 12%, 63%);
+}
+
 .selection-circle, button {
   cursor: pointer;
 }
