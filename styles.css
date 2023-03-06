@@ -58,8 +58,12 @@ p{
   margin-bottom: 1.2em;
 }
 
+.selection-circle {
+  color: hsl(217, 12%, 63%);
+}
+
 .selection-circle:hover {
-  color: hsl((0, 0%, 100%));
+  color: hsl(0, 0%, 100%);
   background-color: hsl(217, 12%, 63%);
 }
 
@@ -70,7 +74,6 @@ p{
 .selection-container {
   display: flex;
   justify-content: space-between;
-  color: hsl(217, 12%, 63%);
   font-size: 14px;
   font-weight: 700;
   margin-bottom: .6em;

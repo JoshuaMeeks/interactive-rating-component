@@ -7,6 +7,7 @@ const submitButton = document.querySelector('button');
 selectionCircles.forEach((circle) => {
   circle.addEventListener('click', (e) => {
     e.target.style.background = 'hsl(25, 97%, 53%)'
+    e.target.style.color = 'hsl(0, 0%, 100%)'
   })
 })
 
