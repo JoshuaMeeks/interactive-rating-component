@@ -9,7 +9,17 @@ html, body {
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+  width: 325px;
+  height: 325px;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
+  border-radius: 15px;
 }
