@@ -63,8 +63,8 @@ p{
 }
 
 .selection-circle:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%) !important;
+  background-color: hsl(217, 12%, 63%) !important;
 }
 
 .selection-circle, button {

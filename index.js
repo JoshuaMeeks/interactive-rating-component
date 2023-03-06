@@ -31,8 +31,12 @@ selectionCircles.forEach((circle) => {
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   setTimeout(() => {
-  card.style.display = 'flex';
-  thankYouCard.style.display = 'none';
+    card.style.display = 'flex';
+    thankYouCard.style.display = 'none';
+    selectionCircles.forEach((circle) => {
+      circle.style.background = 'hsl(213, 19%, 22%)';
+      circle.style.color = 'hsl(217, 12%, 63%)';
+    })
   }, 4000)
   card.style.display = 'none';
   thankYouCard.style.display = 'flex';
