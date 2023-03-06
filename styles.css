@@ -80,3 +80,12 @@ button {
   letter-spacing: 3px;
 }
 
+.thank-you-card {
+  display: none;
+  width: 325px;
+  height: 355px;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
+  border-radius: 15px;
+  padding: 1.5em;
+}
+
