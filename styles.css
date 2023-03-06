@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -9,6 +10,7 @@ html, body {
 }
 
 main {
+  font-family: 'Overpass', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,4 +24,54 @@ main {
   height: 325px;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
   border-radius: 15px;
+  padding: 1.5em;
 }
+
+img {
+  width: 14px;
+  height: 14px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 26px;
+}
+
+p{
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: hsl(213, 19%, 22%);
+}
+
+.selection-container {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(217, 12%, 63%);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.selection-container > div {
+  padding-top: .2em;
+}
+
+button {
+  height: 45px;
+  width: 275px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
