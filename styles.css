@@ -21,7 +21,7 @@ main {
 
 .card {
   width: 325px;
-  height: 325px;
+  height: 355px;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
   border-radius: 15px;
   padding: 1.5em;
@@ -35,29 +35,34 @@ img {
 h1 {
   color: hsl(0, 0%, 100%);
   font-size: 26px;
+  margin-bottom: .4em;
 }
 
 p{
   color: hsl(217, 12%, 63%);
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 1.8em;
 }
 
 .circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 42px;
+  width: 42px;
   border-radius: 100%;
   background-color: hsl(213, 19%, 22%);
+  margin-bottom: 1.2em;
 }
 
 .selection-container {
   display: flex;
   justify-content: space-between;
   color: hsl(217, 12%, 63%);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
+  margin-bottom: .6em;
 }
 
 .selection-container > div {
