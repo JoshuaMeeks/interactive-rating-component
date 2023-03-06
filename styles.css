@@ -20,6 +20,7 @@ main {
 }
 
 .card {
+  display: none;
   width: 325px;
   height: 355px;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
@@ -27,7 +28,7 @@ main {
   padding: 1.5em;
 }
 
-img {
+.star-icon {
   width: 14px;
   height: 14px;
 }
@@ -81,7 +82,7 @@ button {
 }
 
 .thank-you-card {
-  display: none;
+  display: block;
   width: 325px;
   height: 355px;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
