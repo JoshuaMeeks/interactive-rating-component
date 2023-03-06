@@ -20,7 +20,7 @@ main {
 }
 
 .card {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 325px;
   height: 355px;
@@ -83,7 +83,7 @@ button {
 }
 
 .thank-you-card {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 325px;
@@ -123,11 +123,7 @@ button {
 }
 
 @media (min-width: 500px) {
-  * {
-    /* border: solid red 1px; */
-  }
-
-  .card {
+  .card, .thank-you-card {
     width: 375px;
     padding: 1.6em 1.8em 1.8em 1.8em;
     border-radius: 25px;
