@@ -20,7 +20,8 @@ main {
 }
 
 .card {
-  display: none;
+  display: flex;
+  flex-direction: column;
   width: 325px;
   height: 355px;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
@@ -46,7 +47,7 @@ p{
   margin-bottom: 1.8em;
 }
 
-.circle {
+.icon-circle, .selection-circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +73,7 @@ p{
 
 button {
   height: 45px;
-  width: 275px;
+  min-width: 275px;
   border-radius: 25px;
   border: none;
   background-color: hsl(25, 97%, 53%);
@@ -82,7 +83,7 @@ button {
 }
 
 .thank-you-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 325px;
@@ -119,6 +120,41 @@ button {
 
 .thank-you-card > p {
   text-align: center;
+}
+
+@media (min-width: 500px) {
+  * {
+    /* border: solid red 1px; */
+  }
+
+  .card {
+    width: 375px;
+    padding: 1.6em 1.8em 1.8em 1.8em;
+    border-radius: 25px;
+  }
+
+  .card > h1 {
+    margin-bottom: .3em;
+  }
+
+  .card > p {
+    margin-bottom: 1.4em;
+  }
+
+  .icon-circle {
+    margin-bottom: 1.5em;
+  }
+
+  .selection-container {
+    padding: 0;
+    margin-bottom: 1.4em;
+  }
+
+  .selection-circle {
+    height: 48px;
+    width: 48px;
+    margin: 0;
+  }
 }
 
 
