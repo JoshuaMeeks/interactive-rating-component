@@ -174,7 +174,7 @@ button {
     background-color: hsl(217, 12%, 63%) !important;
   }
 
-  #active:hover {
+  #active {
     background-color: hsl(25, 97%, 53%) !important;
     color: hsl(0, 0%, 100%) !important;
   }

@@ -10,8 +10,18 @@ let rating = '';
 
 selectionCircles.forEach((circle) => {
   circle.addEventListener('click', (e) => {
+    if (!activeStatus) {
+      activeStatus = true;
+      e.target.id = 'active';
+      rating = e.target.textContent;
+    } else if (activeStatus) {
+      selectionCircles.forEach((circle) => {
+        circle.id = '';
+        rating = e.target.textContent;
+      })
+    }
     e.target.id = 'active';
-    rating = e.target.textContent;
+    console.log(selectionCircles);
   })
 })
 
