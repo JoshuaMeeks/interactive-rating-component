@@ -10,21 +10,8 @@ let rating = '';
 
 selectionCircles.forEach((circle) => {
   circle.addEventListener('click', (e) => {
-    if (!activeStatus) {
-      activeStatus = true;
-      e.target.style.background = 'hsl(25, 97%, 53%)';
-      e.target.style.color = 'hsl(0, 0%, 100%)';
-      rating = e.target.id;
-    }
-    if (activeStatus) {
-      selectionCircles.forEach((circle) => {
-        circle.style.background = 'hsl(213, 19%, 22%)';
-        circle.style.color = 'hsl(217, 12%, 63%)';
-        e.target.style.background = 'hsl(25, 97%, 53%)';
-        e.target.style.color = 'hsl(0, 0%, 100%)';
-        rating = e.target.id;
-      })
-    }
+    e.target.id = 'active';
+    rating = e.target.textContent;
   })
 })
 
@@ -34,6 +21,7 @@ submitButton.addEventListener('click', (e) => {
     card.style.display = 'flex';
     thankYouCard.style.display = 'none';
     selectionCircles.forEach((circle) => {
+      circle.id = '';
       circle.style.background = 'hsl(213, 19%, 22%)';
       circle.style.color = 'hsl(217, 12%, 63%)';
     })

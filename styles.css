@@ -62,9 +62,9 @@ p{
   color: hsl(217, 12%, 63%);
 }
 
-.selection-circle:hover {
-  color: hsl(0, 0%, 100%) !important;
-  background-color: hsl(217, 12%, 63%) !important;
+#active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
 }
 
 .selection-circle, button {
@@ -167,6 +167,16 @@ button {
     height: 48px;
     width: 48px;
     margin: 0;
+  }
+
+  .selection-circle:hover {
+    color: hsl(0, 0%, 100%) !important;
+    background-color: hsl(217, 12%, 63%) !important;
+  }
+
+  #active:hover {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: hsl(0, 0%, 100%) !important;
   }
 }
 
