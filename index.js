@@ -21,7 +21,6 @@ selectionCircles.forEach((circle) => {
       })
     }
     e.target.id = 'active';
-    console.log(selectionCircles);
   })
 })
 
